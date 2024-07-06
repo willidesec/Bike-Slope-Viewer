@@ -14,6 +14,14 @@
 		3059A4A92C39A7E8001AB495 /* BikeSlopeViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4A82C39A7E8001AB495 /* BikeSlopeViewerTests.swift */; };
 		3059A4B32C39A7E8001AB495 /* BikeSlopeViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4B22C39A7E8001AB495 /* BikeSlopeViewerUITests.swift */; };
 		3059A4B52C39A7E8001AB495 /* BikeSlopeViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4B42C39A7E8001AB495 /* BikeSlopeViewerUITestsLaunchTests.swift */; };
+		3059A4CD2C39AE10001AB495 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C42C39AE10001AB495 /* APIError.swift */; };
+		3059A4CE2C39AE10001AB495 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C52C39AE10001AB495 /* APIPath.swift */; };
+		3059A4CF2C39AE10001AB495 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C62C39AE10001AB495 /* Endpoint.swift */; };
+		3059A4D02C39AE10001AB495 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C72C39AE10001AB495 /* HTTPBody.swift */; };
+		3059A4D12C39AE10001AB495 /* HTTPHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C82C39AE10001AB495 /* HTTPHeaderField.swift */; };
+		3059A4D22C39AE10001AB495 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4C92C39AE10001AB495 /* HTTPMethod.swift */; };
+		3059A4D32C39AE10001AB495 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4CA2C39AE10001AB495 /* NetworkEnvironment.swift */; };
+		3059A4D42C39AE10001AB495 /* URLSession+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A4CB2C39AE10001AB495 /* URLSession+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		3059A4AE2C39A7E8001AB495 /* BikeSlopeViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeSlopeViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3059A4B22C39A7E8001AB495 /* BikeSlopeViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeSlopeViewerUITests.swift; sourceTree = "<group>"; };
 		3059A4B42C39A7E8001AB495 /* BikeSlopeViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeSlopeViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3059A4C42C39AE10001AB495 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3059A4C52C39AE10001AB495 /* APIPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		3059A4C62C39AE10001AB495 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3059A4C72C39AE10001AB495 /* HTTPBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
+		3059A4C82C39AE10001AB495 /* HTTPHeaderField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeaderField.swift; sourceTree = "<group>"; };
+		3059A4C92C39AE10001AB495 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3059A4CA2C39AE10001AB495 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		3059A4CB2C39AE10001AB495 /* URLSession+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,8 @@
 		3059A4962C39A7E7001AB495 /* BikeSlopeViewer */ = {
 			isa = PBXGroup;
 			children = (
-				3059A4972C39A7E7001AB495 /* BikeSlopeViewerApp.swift */,
-				3059A4992C39A7E7001AB495 /* ContentView.swift */,
-				3059A49B2C39A7E8001AB495 /* Assets.xcassets */,
-				3059A49D2C39A7E8001AB495 /* Preview Content */,
+				3059A4C22C39AD8E001AB495 /* Sources */,
+				3059A4C12C39ACF6001AB495 /* Ressources */,
 			);
 			path = BikeSlopeViewer;
 			sourceTree = "<group>";
@@ -125,6 +139,48 @@
 				3059A4B42C39A7E8001AB495 /* BikeSlopeViewerUITestsLaunchTests.swift */,
 			);
 			path = BikeSlopeViewerUITests;
+			sourceTree = "<group>";
+		};
+		3059A4C12C39ACF6001AB495 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3059A49B2C39A7E8001AB495 /* Assets.xcassets */,
+				3059A49D2C39A7E8001AB495 /* Preview Content */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		3059A4C22C39AD8E001AB495 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3059A4972C39A7E7001AB495 /* BikeSlopeViewerApp.swift */,
+				3059A4992C39A7E7001AB495 /* ContentView.swift */,
+				3059A4C32C39ADF9001AB495 /* Service */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3059A4C32C39ADF9001AB495 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3059A4CC2C39AE10001AB495 /* Networking */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3059A4CC2C39AE10001AB495 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3059A4C42C39AE10001AB495 /* APIError.swift */,
+				3059A4C52C39AE10001AB495 /* APIPath.swift */,
+				3059A4C62C39AE10001AB495 /* Endpoint.swift */,
+				3059A4C72C39AE10001AB495 /* HTTPBody.swift */,
+				3059A4C82C39AE10001AB495 /* HTTPHeaderField.swift */,
+				3059A4C92C39AE10001AB495 /* HTTPMethod.swift */,
+				3059A4CA2C39AE10001AB495 /* NetworkEnvironment.swift */,
+				3059A4CB2C39AE10001AB495 /* URLSession+extensions.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3059A4D12C39AE10001AB495 /* HTTPHeaderField.swift in Sources */,
 				3059A49A2C39A7E7001AB495 /* ContentView.swift in Sources */,
 				3059A4982C39A7E7001AB495 /* BikeSlopeViewerApp.swift in Sources */,
+				3059A4CD2C39AE10001AB495 /* APIError.swift in Sources */,
+				3059A4D32C39AE10001AB495 /* NetworkEnvironment.swift in Sources */,
+				3059A4D22C39AE10001AB495 /* HTTPMethod.swift in Sources */,
+				3059A4D42C39AE10001AB495 /* URLSession+extensions.swift in Sources */,
+				3059A4D02C39AE10001AB495 /* HTTPBody.swift in Sources */,
+				3059A4CE2C39AE10001AB495 /* APIPath.swift in Sources */,
+				3059A4CF2C39AE10001AB495 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,15 +485,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BikeSlopeViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BikeSlopeViewer/Ressources/Preview Content\"";
 				DEVELOPMENT_TEAM = LGXH6EX8FJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,15 +514,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BikeSlopeViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BikeSlopeViewer/Ressources/Preview Content\"";
 				DEVELOPMENT_TEAM = LGXH6EX8FJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
